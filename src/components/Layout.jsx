@@ -1,15 +1,24 @@
 import { Outlet, NavLink } from 'react-router-dom'
-import { Cheese, Car, ShoppingBasket, MessageCircle, BookOpenText, Calendar, StickyNote, LayoutGrid } from 'lucide-react'
+import {
+  ChefHat,       // (was Cheese)
+  Car,
+  ShoppingCart,  // (was ShoppingBasket)
+  MessageCircle,
+  BookOpen,      // (was BookOpenText)
+  Calendar,
+  StickyNote,
+  LayoutGrid
+} from 'lucide-react'
 
 const nav = [
-  { to: '/', label: 'Dashboard', icon: LayoutGrid, end: true },
-  { to: '/cheese', label: 'Cheese', icon: Cheese },
-  { to: '/car', label: 'Car', icon: Car },
-  { to: '/kroger', label: 'Kroger', icon: ShoppingBasket },
-  { to: '/chat', label: 'Chat', icon: MessageCircle },
-  { to: '/recipes', label: 'Recipes', icon: BookOpenText },
-  { to: '/planner', label: 'Planner', icon: Calendar },
-  { to: '/notes', label: 'Notes', icon: StickyNote },
+  { to: '/',        label: 'Dashboard', icon: LayoutGrid, end: true },
+  { to: '/cheese',  label: 'Cheese',    icon: ChefHat },      // changed
+  { to: '/car',     label: 'Car',       icon: Car },
+  { to: '/kroger',  label: 'Kroger',    icon: ShoppingCart }, // changed
+  { to: '/chat',    label: 'Chat',      icon: MessageCircle },
+  { to: '/recipes', label: 'Recipes',   icon: BookOpen },     // changed
+  { to: '/planner', label: 'Planner',   icon: Calendar },
+  { to: '/notes',   label: 'Notes',     icon: StickyNote },
 ]
 
 export default function Layout() {

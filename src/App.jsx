@@ -8,6 +8,9 @@ import Chatbot from './pages/Chatbot.jsx'
 import RecipeFinder from './pages/RecipeFinder.jsx'
 import Planner from './pages/Planner.jsx'
 import Notes from './pages/Notes.jsx'
+<h1 className="text-4xl text-blue-600 underline font-extrabold">
+  Tailwind is working
+</h1>
 
 export default function App() {
   return (
